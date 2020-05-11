@@ -68,5 +68,8 @@ router.get('/', async (req, res) => {
             populate: 'recipient'
         }],
     });
+    console.log(user.friends);
     res.send(user.friends)
 });
+
+module.exports = router;

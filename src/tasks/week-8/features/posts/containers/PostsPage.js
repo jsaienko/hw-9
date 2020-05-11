@@ -13,9 +13,7 @@ function PostsPage() {
 
 
   return (
-      <ul>
-        {posts.map(post => <Post key={post._id} post={post} />)}
-      </ul>
+      <div>Posts page</div>
   );
 }
 

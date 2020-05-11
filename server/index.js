@@ -13,6 +13,7 @@ const signUpController = require('./controllers/signup');
 const usersController = require('./controllers/users');
 const postsController = require('./controllers/posts');
 const commentsController = require('./controllers/comments');
+const friendsController = require('./controllers/friends');
 
 
 const app = express();
@@ -28,6 +29,7 @@ const api = express.Router();
 api.use('/users', usersController);
 api.use('/posts', postsController);
 api.use('/comments', commentsController);
+api.use('/friends', friendsController);
 
 app.use('/api', requireAuth, api);
 
